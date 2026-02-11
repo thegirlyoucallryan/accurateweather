@@ -35,3 +35,4 @@ cd accurateweather
 - I used a quick zustand store for this. Also could have been in redux, its just less boilerplate code for this simple task.
 - Query is stored under hooks. I'd probably differentiate queries from hooks in the file structure so its clear.
 - Also probably would have made a card component for the 5 day forcast map but I am running out of time.
+- I set the query enabled key to false to connect the search button and make for less network calls.

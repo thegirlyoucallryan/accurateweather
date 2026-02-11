@@ -7,12 +7,12 @@ export function Searchbar() {
     const zip = useWeatherStore((s) => s.zip)
     const setZip = useWeatherStore((s) => s.setZip)
 
-    const { refetch } = useWeatherQuery(zip) // use query hook just for refetch
+    const { refetch } = useWeatherQuery(zip)
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (!zip) return
-        refetch()      // trigger API call
+        refetch()
     }
 
     return (
